@@ -161,30 +161,46 @@ footer
             <track src="my_file.vtt" kind="subtitles" srclang="it" label="italian">
         </video>
         <br>
-        <form>
+        <form action="" method="post">
+            <input type="hidden" value="mahmoud">
+
             <div>
                 <label >username</label>
-            <input type="text" placeholder="username">
+            <input type="text" placeholder="username" name="user">
 
             </div>
 
             <br>
             <div>
                 <label >password</label>
-            <input required type="password" placeholder="write a complex password">
+            <input required type="password" placeholder="write a complex password" name="pass">
             </div>
             <br>
             <div>
                 <label >subject</label>
-            <input type="text">
+            <input type="text" name="sub">
 
             </div>
             <div>
                 <label >Email</label>
-            <input type="email" required placeholder="write a vaild Email" value="onn@sdjc.com">
+            <input type="email" required placeholder="write a vaild Email" value="onn@sdjc.com" name="mail">
 
             </div>
+            <div>
+                <label>color</label>
+                <input type="color" name="Color">
+            </div>
+           
+            <div>
+                <label>range</label>
+                <input type="range" name="Range" min="0" max="100" step="20" value="80">
+            </div>
+            <input type="reset" value="reset">
             <input  type="submit">
+            <div>
+                <label>number</label>
+                <input type="number" name="Number" max="100" min="0" step="10">
+            </div>
         </form>
     </body>
 </html>
